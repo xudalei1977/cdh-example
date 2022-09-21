@@ -135,10 +135,10 @@ object KuduSample {
 
 }
 
-spark-submit --master yarn \
---deploy-mode client \
---jars ./kudu-client-1.10.0-cdh6.3.2.jar,./kudu-spark2_2.11-1.10.0-cdh6.3.2.jar,./scopt_2.11-3.7.1.jar \
---class com.aws.analytics.KuduSample ./cdh-example-1.0-SNAPSHOT.jar \
--e prod \
--k cdh-master-1:7051,cdh-master-2:7051,cdh-master-3:7051 \
--t inventory_1
+//spark-submit --master yarn \
+//--deploy-mode client \
+//--jars ./kudu-client-1.10.0-cdh6.3.2.jar,./kudu-spark2_2.11-1.10.0-cdh6.3.2.jar,./scopt_2.11-3.7.1.jar \
+//--class com.aws.analytics.KuduSample ./cdh-example-1.0-SNAPSHOT.jar \
+//-e prod \
+//-k cdh-master-1:7051,cdh-master-2:7051,cdh-master-3:7051 \
+//-t inventory_1
